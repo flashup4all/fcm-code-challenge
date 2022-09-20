@@ -24,3 +24,5 @@ fcm_code_challenge-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+.env
