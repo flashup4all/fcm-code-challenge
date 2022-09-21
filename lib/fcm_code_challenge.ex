@@ -3,17 +3,12 @@ defmodule FcmCodeChallenge do
   Documentation for `FcmCodeChallenge`.
   """
 
-  @doc """
-  Hello world.
+  def get_input_file(src) do
+    File.read(src)
+  end
 
-  ## Examples
-
-      iex> FcmCodeChallenge.hello()
-      :world
-
-  """
-  def hello do
-    case File.read("assets/input.txt") do
+  def process_input(src) do
+    case File.read(src) do
       {:ok, text} ->
         text
         |> String.split("\n", trim: true) |> match_train
