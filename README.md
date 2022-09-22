@@ -5,10 +5,15 @@
 ## Installation
 Got to your terminal and enter into you preffered directory then enter the following command below:
 `git clone https://github.com/flashup4all/fcm-code-challenge.git`
+
 `cd fcm-code-challenge`
+
 `mix deps.get`
+
 `mix test`
+
 `iex -S mix`
+
 `FcmCodeChallenge.process_input("assets/input.txt")`
 
 
